@@ -3,8 +3,8 @@ import Header from '../components/shared/Header';
 class About extends React.Component {
     render () {
         return (
-            <h1>I am About Page </h1>
-            <Header/>
+            <div>  <h1>I am About Page </h1>
+            <Header/></div>
         )
     }
 }

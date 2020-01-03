@@ -3,8 +3,8 @@ import Header from '../components/shared/Header';
 class Portfolio extends React.Component {
     render () {
         return (
-            <h1>I am Portfolio Page!</h1>
-            <Header/>
+            <div> <h1>I am Portfolio Page!</h1>
+            <Header/></div>
         )
     }
 }
