@@ -143,76 +143,83 @@ function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
+      var title = this.props.title;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6
+          lineNumber: 10
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, title), this.props.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7
+          lineNumber: 14
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 15
         },
         __self: this
       }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/blogs",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 17
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 18
         },
         __self: this
       }, "Blogs")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/portfolio",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 20
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 21
         },
         __self: this
       }, "Portfolio")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 23
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 24
         },
         __self: this
       }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/cv",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 26
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 27
         },
         __self: this
       }, "Cv")));

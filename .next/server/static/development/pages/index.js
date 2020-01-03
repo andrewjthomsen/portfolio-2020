@@ -143,76 +143,83 @@ function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
+      var title = this.props.title;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6
+          lineNumber: 10
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, title), this.props.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7
+          lineNumber: 14
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 15
         },
         __self: this
       }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/blogs",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 17
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 18
         },
         __self: this
       }, "Blogs")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/portfolio",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 20
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 21
         },
         __self: this
       }, "Portfolio")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 23
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 24
         },
         __self: this
       }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/cv",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 26
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 27
         },
         __self: this
       }, "Cv")));
@@ -226,10 +233,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./pages/portfolio.js":
-/*!****************************!*\
-  !*** ./pages/portfolio.js ***!
-  \****************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -238,7 +245,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_shared_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/shared/Header */ "./components/shared/Header.js");
-var _jsxFileName = "C:\\Users\\rxfit\\Projects-2020\\portfolio-me\\pages\\portfolio.js";
+var _jsxFileName = "C:\\Users\\rxfit\\Projects-2020\\portfolio-me\\pages\\index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -261,57 +268,70 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Portfolio =
+var Index =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(Portfolio, _React$Component);
+  _inherits(Index, _React$Component);
 
-  function Portfolio() {
-    _classCallCheck(this, Portfolio);
+  function Index() {
+    _classCallCheck(this, Index);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Portfolio).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Index).apply(this, arguments));
   }
 
-  _createClass(Portfolio, [{
+  _createClass(Index, [{
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6
-        },
-        __self: this
-      }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 6
-        },
-        __self: this
-      }, "I am Portfolio Page!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_shared_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 7
         },
         __self: this
-      }));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, "I am Index Page from Class Component"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_shared_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        title: "I'm a header component",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      }, "I am header subtitle"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, "See Me Now")));
     }
   }]);
 
-  return Portfolio;
+  return Index;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Portfolio);
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
 /***/ 4:
-/*!**********************************!*\
-  !*** multi ./pages/portfolio.js ***!
-  \**********************************/
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./pages/portfolio.js */"./pages/portfolio.js");
+module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -339,4 +359,4 @@ module.exports = require("react");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=portfolio.js.map
+//# sourceMappingURL=index.js.map
