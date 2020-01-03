@@ -93,9 +93,9 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/index.js":
+/***/ "./pages/blogs.js":
 /*!************************!*\
-  !*** ./pages/index.js ***!
+  !*** ./pages/blogs.js ***!
   \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -104,7 +104,7 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\rxfit\\Projects-2020\\portfolio-me\\pages\\index.js";
+var _jsxFileName = "C:\\Users\\rxfit\\Projects-2020\\portfolio-me\\pages\\blogs.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -127,45 +127,57 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 // const index = () => <div>Welcome Page!</div>
 
 
-var Index =
+var Blogs =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(Index, _React$Component);
+  _inherits(Blogs, _React$Component);
 
-  function Index() {
-    _classCallCheck(this, Index);
+  function Blogs() {
+    _classCallCheck(this, Blogs);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Index).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Blogs).apply(this, arguments));
   }
 
-  _createClass(Index, [{
+  _createClass(Blogs, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 8
         },
         __self: this
-      }, "I am Index Page from Class Component");
+      }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, "I am Blogs Page!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, "Blogs"));
     }
   }]);
 
-  return Index;
+  return Blogs;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Blogs);
 
 /***/ }),
 
 /***/ 3:
 /*!******************************!*\
-  !*** multi ./pages/index.js ***!
+  !*** multi ./pages/blogs.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! ./pages/blogs.js */"./pages/blogs.js");
 
 
 /***/ }),
@@ -182,4 +194,4 @@ module.exports = require("react");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=blogs.js.map

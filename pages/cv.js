@@ -2,12 +2,12 @@
 
 // const index = () => <div>Welcome Page!</div>
 import React from 'react';
-class CV extends React.Component {
+class Cv extends React.Component {
     render () {
         return (
-            <h1>I am CV Page from Class Component</h1>
+            <h1>I am Cv Page from Class Component</h1>
         )
     }
 }
 
-export default CV;
+export default Cv;

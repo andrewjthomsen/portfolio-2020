@@ -88,15 +88,15 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/foo.js":
-/*!**********************!*\
-  !*** ./pages/foo.js ***!
-  \**********************/
+/***/ "./pages/portfolio.js":
+/*!****************************!*\
+  !*** ./pages/portfolio.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -104,7 +104,7 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\rxfit\\Projects-2020\\portfolio-me\\pages\\foo.js";
+var _jsxFileName = "C:\\Users\\rxfit\\Projects-2020\\portfolio-me\\pages\\portfolio.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -127,18 +127,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 // const index = () => <div>Welcome Page!</div>
 
 
-var Foo =
+var Portfolio =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(Foo, _React$Component);
+  _inherits(Portfolio, _React$Component);
 
-  function Foo() {
-    _classCallCheck(this, Foo);
+  function Portfolio() {
+    _classCallCheck(this, Portfolio);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Foo).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Portfolio).apply(this, arguments));
   }
 
-  _createClass(Foo, [{
+  _createClass(Portfolio, [{
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -147,25 +147,25 @@ function (_React$Component) {
           lineNumber: 8
         },
         __self: this
-      }, "I am Foo Page from Class Component");
+      }, "I am Portfolio Page!");
     }
   }]);
 
-  return Foo;
+  return Portfolio;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Foo);
+/* harmony default export */ __webpack_exports__["default"] = (Portfolio);
 
 /***/ }),
 
-/***/ 4:
-/*!****************************!*\
-  !*** multi ./pages/foo.js ***!
-  \****************************/
+/***/ 5:
+/*!**********************************!*\
+  !*** multi ./pages/portfolio.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./pages/foo.js */"./pages/foo.js");
+module.exports = __webpack_require__(/*! ./pages/portfolio.js */"./pages/portfolio.js");
 
 
 /***/ }),
@@ -182,4 +182,4 @@ module.exports = require("react");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=foo.js.map
+//# sourceMappingURL=portfolio.js.map
