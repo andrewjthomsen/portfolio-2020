@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -371,6 +371,7 @@ function (_React$Component) {
           },
           __self: this
         }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          as: "/portfolio2/".concat(post.id),
           href: "/portfolio2?title=".concat(post.title),
           __source: {
             fileName: _jsxFileName,
@@ -479,7 +480,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!**********************************!*\
   !*** multi ./pages/portfolio.js ***!
   \**********************************/

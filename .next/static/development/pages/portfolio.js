@@ -12704,6 +12704,7 @@ function (_React$Component) {
           },
           __self: this
         }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          as: "/portfolio2/".concat(post.id),
           href: "/portfolio2?title=".concat(post.title),
           __source: {
             fileName: _jsxFileName,
@@ -12820,7 +12821,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!**********************************!*\
   !*** multi ./pages/portfolio.js ***!
   \**********************************/
@@ -12845,5 +12846,5 @@ module.exports = dll_8c5f8d517ea84ac209bb;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]));;
+},[[3,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=portfolio.js.map
