@@ -21,7 +21,7 @@ class Portfolio extends React.Component {
   renderPosts(posts) {
     return posts.map((post) => {
         return (
-            <li> <Link as={`/portfolio2/${post.id}`} href={`/portfolio2?title=${post.title}`}>
+            <li> <Link as={`/portfolio2/${post.id}`} href={`/portfolio2?id=${post.id}`}>
             <a style={{'fontSize': '20'}}>{post.title}</a>
             </Link></li>
         )

@@ -1,91 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
-
-/***/ "./components/SuperComponent.js":
-/*!**************************************!*\
-  !*** ./components/SuperComponent.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layouts/BaseLayout */ "./components/layouts/BaseLayout.js");
-var _jsxFileName = "C:\\Users\\rxfit\\Projects-2020\\portfolio-me\\components\\SuperComponent.js";
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-
-var SuperComponent =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(SuperComponent, _React$Component);
-
-  function SuperComponent(props) {
-    var _this;
-
-    _classCallCheck(this, SuperComponent);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(SuperComponent).call(this, props));
-    _this.someVariable = 'Just some var';
-    return _this;
-  }
-
-  _createClass(SuperComponent, [{
-    key: "alertName",
-    value: function alertName(title) {
-      alert(title);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }, "I am Blogs Page!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        },
-        __self: this
-      }, "Blogs"));
-    }
-  }]);
-
-  return SuperComponent;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (SuperComponent);
-
-/***/ }),
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\portfolio.js"],{
 
 /***/ "./components/layouts/BaseLayout.js":
 /*!******************************************!*\
@@ -12721,10 +12634,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/portfolio.js":
+/*!****************************!*\
+  !*** ./pages/portfolio.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12735,11 +12648,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layouts/BaseLayout */ "./components/layouts/BaseLayout.js");
-/* harmony import */ var _components_SuperComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/SuperComponent */ "./components/SuperComponent.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
 
-var _jsxFileName = "C:\\Users\\rxfit\\Projects-2020\\portfolio-me\\pages\\index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -12749,72 +12662,94 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
 
 
-
-var Index =
+var Portfolio =
 /*#__PURE__*/
-function (_SuperComponent) {
-  _inherits(Index, _SuperComponent);
+function (_React$Component) {
+  _inherits(Portfolio, _React$Component);
 
-  _createClass(Index, null, [{
+  function Portfolio() {
+    _classCallCheck(this, Portfolio);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Portfolio).apply(this, arguments));
+  }
+
+  _createClass(Portfolio, [{
+    key: "renderPosts",
+    value: function renderPosts(posts) {
+      return posts.map(function (post) {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          as: "/portfolio2/".concat(post.id),
+          href: "/portfolio2?id=".concat(post.id)
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+          style: {
+            'fontSize': '20'
+          }
+        }, post.title)));
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var posts = this.props.posts;
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_2__["default"], null, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "I am Portfolio Page!"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, this.renderPosts(posts)));
+    }
+  }], [{
     key: "getInitialProps",
     value: function () {
       var _getInitialProps = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var userData, response, _userData;
-
+        var posts, response;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                userData = {};
+                posts = [];
                 _context.prev = 1;
                 _context.next = 4;
-                return axios__WEBPACK_IMPORTED_MODULE_4___default.a.get("https://jsonplaceholder.typicode.com/todos/1");
+                return axios__WEBPACK_IMPORTED_MODULE_3___default.a.get("https://jsonplaceholder.typicode.com/posts");
 
               case 4:
                 response = _context.sent;
-                _userData = response.data;
-                console.log(response);
-                _context.next = 12;
+                posts = response.data;
+                _context.next = 11;
                 break;
 
-              case 9:
-                _context.prev = 9;
+              case 8:
+                _context.prev = 8;
                 _context.t0 = _context["catch"](1);
                 console.error(_context.t0);
 
-              case 12:
+              case 11:
                 return _context.abrupt("return", {
-                  initialData: [1, 2, 3, 4]
+                  posts: posts.splice(0, 10)
                 });
 
-              case 13:
+              case 12:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[1, 9]]);
+        }, _callee, null, [[1, 8]]);
       }));
 
       function getInitialProps() {
@@ -12825,84 +12760,10 @@ function (_SuperComponent) {
     }()
   }]);
 
-  function Index(props) {
-    var _this;
+  return Portfolio;
+}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
 
-    _classCallCheck(this, Index);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Index).call(this, props));
-
-    _defineProperty(_assertThisInitialized(_this), "updateTitle", function () {
-      _this.setState({
-        title: "Pow!"
-      });
-    });
-
-    _this.state = {
-      title: "I am Index Pge"
-    };
-    return _this;
-  }
-
-  _createClass(Index, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      console.log("componentDidMount says... I am also working");
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      console.log("componentDidUpdate is working here!");
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      console.log("componentWillUnmount");
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var title = this.state.title;
-      var _this$props = this.props,
-          userData = _this$props.userData,
-          initialData = _this$props.initialData;
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 47
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 48
-        },
-        __self: this
-      }, "I am Index Page from Class Component"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 49
-        },
-        __self: this
-      }, title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-        onClick: function onClick() {
-          return _this2.updateTitle();
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
-      }, "Change Title"));
-    }
-  }]);
-
-  return Index;
-}(_components_SuperComponent__WEBPACK_IMPORTED_MODULE_3__["default"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Portfolio);
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -12919,21 +12780,21 @@ function (_SuperComponent) {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/portfolio")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
 /***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/*!**********************************!*\
+  !*** multi ./pages/portfolio.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/', function() {
-module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
+__NEXT_REGISTER_PAGE('/portfolio', function() {
+module.exports = __webpack_require__(/*! ./pages/portfolio.js */"./pages/portfolio.js");
 
 return { page: module.exports.default }});
 
@@ -12951,4 +12812,4 @@ module.exports = dll_8c5f8d517ea84ac209bb;
 /***/ })
 
 },[[3,"static/runtime/webpack.js","styles"]]]));;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=portfolio.js.map
