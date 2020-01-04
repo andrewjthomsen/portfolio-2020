@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import '../../styles/main.scss';
 class Header extends React.Component {
 
 
@@ -10,7 +11,8 @@ class Header extends React.Component {
             <React.Fragment>
             <p>{ title }</p>
             {this.props.children}
-            <p>Styled P elem</p>
+            <p className="custom-p">Styled P elem</p>
+            <p className="customClassFromFile">Styled P elem</p>
             <Link href="/">
             <a style={{'fontSize': '20'}}>Home</a>
             </Link>
@@ -30,6 +32,9 @@ class Header extends React.Component {
             {`
                 a {
                     font-size: 20px;
+                };
+                .custom-p {
+                    color: red;
                 }
             `}
             </style>
