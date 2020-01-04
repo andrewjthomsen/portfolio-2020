@@ -16,6 +16,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layouts/BaseLayout */ "./components/layouts/BaseLayout.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
 
 var _jsxFileName = "C:\\Users\\rxfit\\Projects-2020\\portfolio-me\\pages\\portfolio.js";
 
@@ -45,6 +47,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var Portfolio =
 /*#__PURE__*/
 function (_React$Component) {
@@ -63,10 +66,26 @@ function (_React$Component) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 23
+            lineNumber: 24
           },
           __self: this
-        }, post.title);
+        }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          href: "/portfolios?title=".concat(post.title),
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+          style: {
+            'fontSize': '20'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25
+          },
+          __self: this
+        }, post.title)));
       });
     }
   }, {
@@ -76,19 +95,19 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 34
         },
         __self: this
       }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 36
         },
         __self: this
       }, "I am Portfolio Page!"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 37
         },
         __self: this
       }, this.renderPosts(posts)));
@@ -168,4 +187,4 @@ function (_React$Component) {
 /***/ })
 
 })
-//# sourceMappingURL=portfolio.js.215bc1a241bb8dec2125.hot-update.js.map
+//# sourceMappingURL=portfolio.js.0eae34dacdd8fb3bb992.hot-update.js.map

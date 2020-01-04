@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -301,23 +301,32 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./pages/portfolios.js":
-/*!*****************************!*\
-  !*** ./pages/portfolios.js ***!
-  \*****************************/
+/***/ "./pages/portfolio.js":
+/*!****************************!*\
+  !*** ./pages/portfolio.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layouts/BaseLayout */ "./components/layouts/BaseLayout.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "next/link");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\rxfit\\Projects-2020\\portfolio-me\\pages\\portfolios.js";
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "@babel/runtime/regenerator");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layouts/BaseLayout */ "./components/layouts/BaseLayout.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "next/link");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+
+var _jsxFileName = "C:\\Users\\rxfit\\Projects-2020\\portfolio-me\\pages\\portfolio.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -339,40 +348,123 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Portfolios =
+
+var Portfolio =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(Portfolios, _React$Component);
+  _inherits(Portfolio, _React$Component);
 
-  function Portfolios() {
-    _classCallCheck(this, Portfolios);
+  function Portfolio() {
+    _classCallCheck(this, Portfolio);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Portfolios).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Portfolio).apply(this, arguments));
   }
 
-  _createClass(Portfolios, [{
+  _createClass(Portfolio, [{
+    key: "renderPosts",
+    value: function renderPosts(posts) {
+      return posts.map(function (post) {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24
+          },
+          __self: this
+        }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          href: "/portfolio2?title=".concat(post.title),
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+          style: {
+            'fontSize': '20'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25
+          },
+          __self: this
+        }, post.title)));
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      var posts = this.props.posts;
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 34
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 36
         },
         __self: this
-      }, "I am Portfolios Page from Class Component"));
+      }, "I am Portfolio Page!"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, this.renderPosts(posts)));
     }
+  }], [{
+    key: "getInitialProps",
+    value: function () {
+      var _getInitialProps = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var posts, response;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                posts = [];
+                _context.prev = 1;
+                _context.next = 4;
+                return axios__WEBPACK_IMPORTED_MODULE_3___default.a.get("https://jsonplaceholder.typicode.com/posts");
+
+              case 4:
+                response = _context.sent;
+                posts = response.data;
+                _context.next = 11;
+                break;
+
+              case 8:
+                _context.prev = 8;
+                _context.t0 = _context["catch"](1);
+                console.error(_context.t0);
+
+              case 11:
+                return _context.abrupt("return", {
+                  posts: posts.splice(0, 10)
+                });
+
+              case 12:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[1, 8]]);
+      }));
+
+      function getInitialProps() {
+        return _getInitialProps.apply(this, arguments);
+      }
+
+      return getInitialProps;
+    }()
   }]);
 
-  return Portfolios;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+  return Portfolio;
+}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Portfolios);
+/* harmony default export */ __webpack_exports__["default"] = (Portfolio);
 
 /***/ }),
 
@@ -387,15 +479,37 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 5:
-/*!***********************************!*\
-  !*** multi ./pages/portfolios.js ***!
-  \***********************************/
+/***/ 4:
+/*!**********************************!*\
+  !*** multi ./pages/portfolio.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./pages/portfolios.js */"./pages/portfolios.js");
+module.exports = __webpack_require__(/*! ./pages/portfolio.js */"./pages/portfolio.js");
 
+
+/***/ }),
+
+/***/ "@babel/runtime/regenerator":
+/*!*********************************************!*\
+  !*** external "@babel/runtime/regenerator" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/regenerator");
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ }),
 
@@ -433,4 +547,4 @@ module.exports = require("styled-jsx/style");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=portfolios.js.map
+//# sourceMappingURL=portfolio.js.map

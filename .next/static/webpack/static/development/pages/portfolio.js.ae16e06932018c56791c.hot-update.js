@@ -69,7 +69,23 @@ function (_React$Component) {
             lineNumber: 24
           },
           __self: this
-        }, post.title);
+        }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          href: "/portfolio2?title=".concat(post.title),
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+          style: {
+            'fontSize': '20'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25
+          },
+          __self: this
+        }, post.title)));
       });
     }
   }, {
@@ -79,19 +95,19 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 34
         },
         __self: this
       }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 36
         },
         __self: this
       }, "I am Portfolio Page!"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 37
         },
         __self: this
       }, this.renderPosts(posts)));
@@ -171,4 +187,4 @@ function (_React$Component) {
 /***/ })
 
 })
-//# sourceMappingURL=portfolio.js.fe70d8f3badd08fa6c5e.hot-update.js.map
+//# sourceMappingURL=portfolio.js.ae16e06932018c56791c.hot-update.js.map
