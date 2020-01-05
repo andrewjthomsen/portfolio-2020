@@ -23,8 +23,9 @@ class Portfolio2 extends React.Component {
         console.log(this.props);
         return (
             <BaseLayout>
-            <h1>I am Portfolios Page from Class Component</h1>
-            <h2>{this.props.router.query.id}</h2>
+            <h1>{portfolio2.title}</h1>
+            <p>BODY:{portfolio2.body}</p>
+            <p>ID:{portfolio2.id}</p>
             </BaseLayout>
             
         )
