@@ -6,22 +6,22 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 app
-  .prepare()
+  .prepare() 
   .then(() => {
     const server = express();
 
-    server.get('/portfolio2/:id', (req, res) => {
-        const actualPage = '/portfolio2'
-        const queryParams = { id: req.params.id }
-        app.render(req, res, actualPage, queryParams)
-    })
+    server.get("/portfolio2/:id", (req, res) => {
+      const actualPage = "/portfolio2";
+      const queryParams = { id: req.params.id };
+      app.render(req, res, actualPage, queryParams);
+    });
 
     server.get("*", (req, res) => {
       return handle(req, res);
     });
 
-    server.listen(3000, (err) => {
-        if (err) throw err
+    server.listen(3000, err => {
+      if (err) throw err;
       console.log(">Ready on http://localhost:3000");
     });
   })
