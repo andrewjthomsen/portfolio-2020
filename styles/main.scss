@@ -1,8 +1,4 @@
 @font-face {
-    font-family:'Anton';
-    src: url('/static/fonts/Anton.ttf');
-    font-weight: normal;
-    font-style: normal;
     font-family:'Montserrat';
     src: url('/static/fonts/Montserrat-Regular.ttf');
     font-weight: normal;
@@ -11,7 +7,7 @@
 
 @font-face {
     font-family:'Anton';
-    src: url('/static/fonts/Anton.ttf');
+    src: url('/static/fonts/Anton-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +23,7 @@
     font-family:'Montserrat';
     src: url('/static/fonts/Montserrat-Italic.ttf');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 
 @font-face {
@@ -35,6 +31,10 @@
     src: url('/static/fonts/Montserrat-Light.ttf');
     font-weight: lighter;
     font-style: normal;
+}
+
+html, body {
+    font-family:'Montserrat', 'Anton' !important;
 }
 .customClassFromFile {
     color: green;
