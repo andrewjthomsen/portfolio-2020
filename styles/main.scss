@@ -1,3 +1,45 @@
+@font-face {
+    font-family:'Anton';
+    src: url('/static/fonts/Anton.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-family:'Montserrat';
+    src: url('/static/fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Anton';
+    src: url('/static/fonts/Anton.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Montserrat';
+    src: url('/static/fonts/Montserrat-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Montserrat';
+    src: url('/static/fonts/Montserrat-Italic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Montserrat';
+    src: url('/static/fonts/Montserrat-Light.ttf');
+    font-weight: lighter;
+    font-style: normal;
+}
 .customClassFromFile {
     color: green;
+}
+
+.fromPage {
+    font-size: 50px;
 }
