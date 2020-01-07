@@ -1,13 +1,15 @@
-import React from 'react';
-import Header from '../shared/Header';
+import React, { Children } from "react";
+import Header from "../shared/Header";
 
-const BaseLayout = (props) => {
-    return (
-        <React.Fragment>
-            <Header />
-            {props.children}
-        </React.Fragment>
-        
-    )
-}
+const BaseLayout = props => {
+  const { className, Children } = props;
+  return (
+    <div className="layout-container">
+      <Header />
+      <main className={`cover ${className}`}>
+        <div className="wrapper">{Children}</div>
+      </main>
+    </div>
+  );
+};
 export default BaseLayout;

@@ -1,5 +1,9 @@
 import React from 'react';
-import App, { container } from 'next/app';
+import App, { Container } from 'next/app';
+
+// Styling
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/main.scss";
 
 export default class MyApp extends App {
     static async getInitialProps({ Component, router, ctx }) {
