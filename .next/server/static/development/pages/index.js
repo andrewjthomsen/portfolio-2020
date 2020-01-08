@@ -110,14 +110,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var BaseLayout = function BaseLayout(props) {
   var className = props.className,
-      Children = props.Children;
+      children = props.children;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "layout-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
     className: "cover ".concat(className)
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "wrapper"
-  }, Children)));
+  }, children)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (BaseLayout);

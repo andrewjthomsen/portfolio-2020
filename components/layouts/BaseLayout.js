@@ -2,12 +2,12 @@ import React, { Children } from "react";
 import Header from "../shared/Header";
 
 const BaseLayout = props => {
-  const { className, Children } = props;
+  const { className, children } = props;
   return (
     <div className="layout-container">
       <Header />
       <main className={`cover ${className}`}>
-        <div className="wrapper">{Children}</div>
+        <div className="wrapper">{children}</div>
       </main>
     </div>
   );
